@@ -13,9 +13,23 @@ import {
 
 function App() {
   return (
-    <>
-      <div> 3D dev portfolio nov 23</div>
-    </>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-center bg-no-repeat bg-cover bg-hero-pattern">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

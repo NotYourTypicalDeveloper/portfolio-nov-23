@@ -1,3 +1,4 @@
+import React from "react";
 import Stars from "./Stars.jsx";
 
 const StarsCanvas = () => {
