@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-atuo flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         {/* vertical bar */}
         <div className="flex flex-col items-center justify-center mt-5">
@@ -21,12 +21,12 @@ const Hero = () => {
             Salut, I'm <span className="text-[#915eff]">Caroline</span>.
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Web Applications / Front End Developer by day
-            <br className="hidden sm:block" /> & Table tennis league player, by
-            night.
+            Web Applications | Front End Developer
+            <br className="hidden sm:block" /> & Table tennis league player
           </p>
         </div>
       </div>
+      <ComputersCanvas />
     </section>
   );
 };
