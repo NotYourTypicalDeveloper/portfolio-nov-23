@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <img src={logo2} alt="logo" className="object-contain w-10 h-10" />
 
-          <p className="font-bold text-white">Caroline Ho</p>
+          <p className="font-bold text-white">CH</p>
         </Link>
 
         {/* Navbar links__ */}

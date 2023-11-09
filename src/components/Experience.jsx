@@ -8,11 +8,25 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles.js";
 import { experiences } from "../datacontent/index.js";
 import SectionWrapper from "./hoc/SectionWrapper.jsx";
-
+import ExperienceCard from "./ExperienceCard.jsx";
 import { textVariant } from "../utils/motion.js";
 
 const Experience = () => {
-  return <div>Experience</div>;
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+      </motion.div>
+
+      <div className="flex flex-col mt-20">
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard key={index} experience={experience} />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
 };
 
-export default Experience;
+export default SectionWrapper(Experience, "work");
