@@ -1,7 +1,4 @@
 import {
-  mobile,
-  backend,
-  web,
   javascript,
   typescript,
   html,
@@ -22,6 +19,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  RPAicon,
+  pingicon,
+  WebAppicon,
+  FEdevicon,
 } from "../assets";
 
 export const navLinks = [
@@ -42,15 +43,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Applications Developer",
-    icon: web,
+    icon: WebAppicon,
   },
   {
     title: "Front End Developer",
-    icon: mobile,
+    icon: FEdevicon,
+  },
+  {
+    title: "RPA automation",
+    icon: RPAicon,
   },
   {
     title: "League Table tennis player",
-    icon: backend,
+    icon: pingicon,
   },
 ];
 

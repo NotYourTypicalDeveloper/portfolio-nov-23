@@ -14,11 +14,9 @@ const ServiceCard = ({ index, title, icon }) => {
           <img
             src={icon}
             alt={title}
-            className="text-white text-[20px] font-bold text-center"
+            className="text-[18px] font-bold text-center text-white"
           />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
+          <h3 className="text-lg text-center text-white">{title}</h3>
         </div>
       </motion.div>
     </Tilt>

@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import logo2 from "./logo2.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import RPAicon from "./RPAicon.png";
+import pingicon from "./pingicon.png";
+import FEdevicon from "./FEdevicon.png";
+import WebAppicon from "./WebAppicon.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -34,10 +34,6 @@ import tripguide from "./tripguide.png";
 export {
   logo,
   logo2,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -61,4 +57,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  RPAicon,
+  pingicon,
+  FEdevicon,
+  WebAppicon,
 };
