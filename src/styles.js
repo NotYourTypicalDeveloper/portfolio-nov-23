@@ -13,6 +13,7 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   cardBackgroundColor: "#1d1836",
+  textColor2: "text-stone-200",
 };
 
 export { styles };

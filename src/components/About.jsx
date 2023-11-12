@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 
 import ServiceCard from "./ServiceCard.jsx";
 
@@ -8,6 +7,7 @@ import { styles } from "../styles";
 import { services } from "../datacontent/index.js";
 import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from "./hoc/SectionWrapper.jsx";
+
 const About = () => {
   return (
     <>

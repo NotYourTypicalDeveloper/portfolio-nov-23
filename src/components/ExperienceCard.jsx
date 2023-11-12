@@ -15,7 +15,7 @@ const ExperienceCard = ({ experience }) => (
         <img
           src={experience.icon}
           alt={experience.company_name}
-          className="w-[60%] h-[60%] object-contain"
+          className="w-[100%] h-[100%] object-contain rounded-full"
         />
       </div>
     }
@@ -35,11 +35,11 @@ const ExperienceCard = ({ experience }) => (
 
     {/* job tasks */}
 
-    <ul className="mt-5 ml-5 space-y-2 list-disc">
+    <ul className={`mt-5 ml-5 space-y-2 list-disc ${styles.textColor2}`}>
       {experience.points.map((point, index) => (
         <li
           key={`experience-point${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-[14px] pl-1 tracking-wider"
         >
           {point}
         </li>
