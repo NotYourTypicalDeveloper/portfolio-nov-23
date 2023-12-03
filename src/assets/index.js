@@ -25,9 +25,9 @@ import threejs from "./tech/threejs.svg";
 import bikeclublogo from "./company/bikeclublogo.webp";
 import bauermedialogo from "./company/bauermedialogo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import bikeclubscreenshot from "./projectsscreenshots/bikeclub_screenshot.png";
+import chatbotcreenshot from "./projectsscreenshots/chatbot_screenshot.png";
+import contactformscreenshot from "./projectsscreenshots/contactform_screenshot.png";
 
 export {
   logo,
@@ -57,4 +57,7 @@ export {
   WebAppicon,
   bikeclublogo,
   bauermedialogo,
+  bikeclubscreenshot,
+  chatbotcreenshot,
+  contactformscreenshot,
 };

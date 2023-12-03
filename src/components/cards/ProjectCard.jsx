@@ -23,14 +23,15 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-xl sm:w-[360px] w-full"
       >
+        {/* Project screenshot___  */}
         <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt={name}
             className="object-cover w-full h-full rounded-2xl"
-          />{" "}
+          />
         </div>
-
+        {/* Github vignette___  */}
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
@@ -48,7 +49,7 @@ const ProjectCard = ({
           <h3 className={`${styles.cardTitle}`}>{name}</h3>
           <p className={`${styles.cardText}`}>{description}</p>
         </div>
-
+        {/* Hash tags___  */}
         <div className="flex flex-wrap gap-2 mt-4">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[0.85rem] ${tag.color}`}>

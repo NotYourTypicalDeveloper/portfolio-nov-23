@@ -11,9 +11,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   RPAicon,
   pingicon,
@@ -21,6 +18,9 @@ import {
   FEdevicon,
   bikeclublogo,
   bauermedialogo,
+  bikeclubscreenshot,
+  chatbotcreenshot,
+  contactformscreenshot,
 } from "../assets";
 
 export const navLinks = [
@@ -171,58 +171,46 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Bike Club",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Rebuilt & refurbishment of the Bike Club's existing e-commerce platform using a substantial and modern FE tech stack, establishing various API connections to retrieve data from various end points",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
         name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "chakra-ui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "graphQl",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: bikeclubscreenshot,
+    source_code_link: "https://github.com/",
+    live_site_link: "https://bikeclub.com",
+  },
+  {
+    name: "Chatbot",
+    description:
+      "Personal project. Customized chatbot/virtual assistant to reply to screening questions from recruiters, as well as non-work-related conversations. The chatbot provides diverse menus and clickable option tags for user interaction, incorporating a functionality for open-ended questions.",
+    tags: [
+      {
+        name: "react-simple-chatbot",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -230,8 +218,37 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: chatbotcreenshot,
+    source_code_link:
+      "https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant",
+    live_site_link:
+      "https://notyourtypicaldeveloper.github.io/carolineVirtualAssitant/",
+  },
+  {
+    name: "Job contact form",
+    description:
+      "Personal project. Multi-step contact form tailored for recruiters, companies, enabling the straightforward submission of job specifications directly to my Gmail inbox. Boasting user-friendly features: navigation buttons, a graphical progress bar, and diverse input types",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodemailer",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: contactformscreenshot,
     source_code_link: "https://github.com/",
+    live_site_link: "https://job-contact-form.vercel.app/",
   },
 ];
 
