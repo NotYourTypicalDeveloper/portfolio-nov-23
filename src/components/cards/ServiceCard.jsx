@@ -1,7 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { styles } from "../styles.js";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../../styles.js";
+import { fadeIn, textVariant } from "../../utils/motion.js";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (

@@ -14,6 +14,8 @@ const styles = {
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   cardBackgroundColor: "#1d1836",
   textColor2: "text-stone-200",
+  cardTitle: "text-white text-[24px] font-semibold",
+  cardText: "text-secondary text-[0.85rem]",
 };
 
 export { styles };

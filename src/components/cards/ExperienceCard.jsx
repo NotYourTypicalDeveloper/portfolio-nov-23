@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import { styles } from "../styles.js";
+import { styles } from "../../styles.js";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -22,9 +22,7 @@ const ExperienceCard = ({ experience }) => (
   >
     {/* Title & company name */}
     <div>
-      <h3 className="text-white text-[24px] font-semibold">
-        {experience.title}
-      </h3>
+      <h3 className={`${styles.cardTitle}`}>{experience.title}</h3>
       <p
         className="text-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
@@ -35,12 +33,9 @@ const ExperienceCard = ({ experience }) => (
 
     {/* job tasks */}
 
-    <ul className={`mt-5 ml-5 space-y-2 list-disc ${styles.textColor2}`}>
+    <ul className="mt-5 ml-5 space-y-2 list-disc">
       {experience.points.map((point, index) => (
-        <li
-          key={`experience-point${index}`}
-          className="text-[14px] pl-1 tracking-wider"
-        >
+        <li key={`experience-point${index}`} className={`${styles.cardText}`}>
           {point}
         </li>
       ))}
