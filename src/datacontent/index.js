@@ -4,14 +4,9 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  threejs,
   RPAicon,
   pingicon,
   WebAppicon,
@@ -21,6 +16,12 @@ import {
   bikeclubscreenshot,
   chatbotcreenshot,
   contactformscreenshot,
+  sharepoint,
+  nextjs,
+  powerautomate,
+  graphql,
+  chakraUI,
+  jest,
 } from "../assets";
 
 export const navLinks = [
@@ -59,14 +60,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -75,20 +68,20 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
   },
   {
     name: "git",
@@ -99,8 +92,28 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "sharepoint",
+    icon: sharepoint,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "powerautomate",
+    icon: powerautomate,
+  },
+  {
+    name: "graphQl",
+    icon: graphql,
+  },
+  {
+    name: "chakraUI",
+    icon: chakraUI,
+  },
+  {
+    name: "jest",
+    icon: jest,
   },
 ];
 

@@ -1,26 +1,28 @@
-import logo from "./logo.svg";
-import logo2 from "./logo2.svg";
-import RPAicon from "./RPAicon.png";
-import pingicon from "./pingicon.png";
-import FEdevicon from "./FEdevicon.png";
-import WebAppicon from "./WebAppicon.png";
+import logo from "./my-logo/logo.svg";
+import logo2 from "./my-logo/logo2.svg";
+import RPAicon from "./skill-cards-icons/RPAicon.png";
+import pingicon from "./skill-cards-icons/pingicon.png";
+import FEdevicon from "./skill-cards-icons/FEdevicon.png";
+import WebAppicon from "./skill-cards-icons/WebAppicon.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import css from "./tech-icons/css.png";
+import figma from "./tech-icons/figma.png";
+import git from "./tech-icons/git.png";
+import html from "./tech-icons/html.png";
+import javascript from "./tech-icons/javascript.png";
+import nodejs from "./tech-icons/nodejs.png";
+import reactjs from "./tech-icons/reactjs.png";
+import tailwind from "./tech-icons/tailwind.png";
+import typescript from "./tech-icons/typescript.png";
+import sharepoint from "./tech-icons/sharepoint.svg";
+import nextjs from "./tech-icons/nextjs.svg";
+import powerautomate from "./tech-icons/MSpowerautomate.webp";
+import graphql from "./tech-icons/graphql.svg";
+import chakraUI from "./tech-icons/chakraUI.png";
+import jest from "./tech-icons/jest.png";
 
 import bikeclublogo from "./company/bikeclublogo.webp";
 import bauermedialogo from "./company/bauermedialogo.png";
@@ -36,21 +38,14 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
-  threejs,
-  carrent,
-  jobit,
-  tripguide,
   RPAicon,
   pingicon,
   FEdevicon,
@@ -60,4 +55,10 @@ export {
   bikeclubscreenshot,
   chatbotcreenshot,
   contactformscreenshot,
+  sharepoint,
+  nextjs,
+  powerautomate,
+  graphql,
+  chakraUI,
+  jest,
 };
