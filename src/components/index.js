@@ -10,7 +10,6 @@ import About from "./sections/About";
 import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
-import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 
 export {
@@ -20,7 +19,6 @@ export {
   Tech,
   Experience,
   Projects,
-  Feedbacks,
   Contact,
   EarthCanvas,
   BallCanvas,
