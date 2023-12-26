@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../../styles.js";
-import { EarthCanvas } from "../canvas/index.js";
+import { EarthCanvas, StarsCanvas } from "../canvas/index.js";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
@@ -89,6 +89,7 @@ const Contact = () => {
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
+        {/* <StarsCanvas /> */}
       </motion.div>
     </div>
   );
