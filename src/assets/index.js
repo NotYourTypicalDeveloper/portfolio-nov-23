@@ -1,5 +1,6 @@
 import logo from "./my-logo/logo.svg";
 import logo2 from "./my-logo/logo2.svg";
+import profilePic from "./profile-pic.jpeg";
 import RPAicon from "./skill-cards-icons/RPAicon.png";
 import pingicon from "./skill-cards-icons/pingicon.png";
 import FEdevicon from "./skill-cards-icons/FEdevicon.png";
@@ -61,4 +62,5 @@ export {
   graphql,
   chakraUI,
   jest,
+  profilePic,
 };

@@ -1,7 +1,5 @@
 import React from "react";
-
 import ServiceCard from "../cards/ServiceCard.jsx";
-
 import { motion } from "framer-motion";
 import { styles } from "../../styles.js";
 import { services } from "../../datacontent/index.js";
