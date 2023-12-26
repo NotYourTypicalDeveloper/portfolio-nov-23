@@ -24,7 +24,7 @@ const About = () => {
         as well as automation. Additionally, I am an enthusiast for 3D,
         animations, and chatbots.
       </motion.p>
-      <div className="flex flex-wrap gap-10 mt-16">
+      <div className="flex flex-wrap justify-center gap-10 mt-16">
         {services.map((service, i) => (
           <ServiceCard key={service.title} index={i} {...service} />
         ))}
