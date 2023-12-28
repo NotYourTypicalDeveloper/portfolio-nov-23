@@ -8,7 +8,7 @@ import { ProfilePic } from "../atoms/ProfilePic.jsx";
 const Hero = () => {
   return (
     <>
-      <section className={`relative w-full h-auto`}>
+      <section className={`relative w-full h-auto py-10 lg:py-12`}>
         {/* Intro text___  */}
         <motion.div
           variants={textVariant()}
