@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, Suspense } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../../styles.js";
-import { ComputersCanvas } from "../canvas/index.js";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
+import ComputersCanvas from "../canvas/Computers.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = (e) => {};
 
   return (
-    <div className="flex">
+    <div className="flex flex-col overflow-hidden lg:gap-10 lg:flex-row">
       {/* CONTACT FORM_____  */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -28,7 +28,11 @@ const Contact = () => {
       >
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form ref={formRef} onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col gap-8"
+          ref={formRef}
+          onSubmit={handleSubmit}
+        >
           {/* Name___ */}
           <label className="flex flex-col">
             <span className="mb-4 font-medium text-white">Your name</span>
@@ -69,7 +73,7 @@ const Contact = () => {
           </label>
           <button
             type="submit"
-            className="px-8 py-3 font-bold text-white shadow-md outline-none bg-teriary w-fit shadow-primary rounded-xl"
+            className="px-8 py-3 font-bold text-white shadow-md outline-none bg-tertiary rounded-xl w-fit shadow-primary"
           >
             {loading ? "sending..." : "Send"}
           </button>
@@ -77,7 +81,7 @@ const Contact = () => {
       </motion.div>
 
       {/* 3D MODEL SECTION_____ */}
-      <div className="flex-1">
+      <div className="flex-1 overflow-hidden">
         <ComputersCanvas />
       </div>
     </div>

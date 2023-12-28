@@ -5,12 +5,12 @@ const styles = {
   // COLORS
   textColor2: "text-stone-200",
   heroHeadText:
-    "font-bold text-white lg:text-[70px] sm:text-[55px] xs:text-[45px] text-[40px] lg:leading-[98px] mt-2",
+    "font-bold text-white md:text-5xl text-lg text-[40px] md:leading-relaxed mt-10",
   heroSubText:
-    "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-base xs:text-[20px] text-[16px] lg:leading-[40px]",
+    "mt-10 text-[#dfd9ff] font-medium md:text-4xl sm:text-base xs:text-[20px] md:leading-relaxed",
   // SECTIONS
   sectionHeadText:
-    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px]",
+    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10",
   sectionSubText: "sm:text-base xs:text-sm xl:text-lg text-secondary max-w-3xl",
 
   // CARDS

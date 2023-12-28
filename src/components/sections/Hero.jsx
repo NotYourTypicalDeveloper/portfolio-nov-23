@@ -12,9 +12,9 @@ const Hero = () => {
         {/* Intro text___  */}
         <motion.div
           variants={textVariant()}
-          className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-16 lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-24`}
+          className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-16 flex flex-col lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-24 gap-10`}
         >
-          <div className=" lg:pr-12">
+          <div className="mx-auto lg:pr-12">
             <ProfilePic />
           </div>
 
