@@ -15,7 +15,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="text-secondary text-[-17px] max-w-3xl leading-[30px] mt-10"
+        className={` ${styles.sectionSubText} mt-10`}
       >
         Driven and resourceful, my coding journey started in 2019. Since then, I
         have successfully built various projects using my creative thinking and

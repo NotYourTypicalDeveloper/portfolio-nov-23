@@ -47,7 +47,7 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className={`${styles.cardTitle}`}>{name}</h3>
-          <p className={`${styles.cardText}`}>{description}</p>
+          <p className={`${styles.smallerCardText}`}>{description}</p>
         </div>
         {/* Hash tags___  */}
         <div className="flex flex-wrap gap-2 mt-4">
