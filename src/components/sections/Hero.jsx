@@ -8,7 +8,7 @@ import { ProfilePic } from "../atoms/ProfilePic.jsx";
 const Hero = () => {
   return (
     <>
-      <section className={`relative w-full h-auto py-10 lg:py-12`}>
+      <section className={`relative w-full h-auto py-10 lg:py-12 `}>
         {/* Intro text___  */}
         <motion.div
           variants={textVariant()}
@@ -18,7 +18,7 @@ const Hero = () => {
             <ProfilePic />
           </div>
 
-          <div>
+          <div className="xl:max-w-2xl">
             <h1 className={`${styles.heroHeadText}`}>
               Hey, I'm <span className="text-indigo-500">Caroline</span>.
             </h1>
