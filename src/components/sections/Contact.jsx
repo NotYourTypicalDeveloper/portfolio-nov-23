@@ -16,8 +16,44 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICEID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Caroline",
+          from_email: form.email,
+          to_email: `${process.env.REACT_APP_MYEMAIL}`,
+          message: form.message,
+        },
+        process.env.REACT_APP_PUB_KEY
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank You, I will get back to you asap");
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        }),
+          (err) => {
+            setLoading(false);
+            console.log(error);
+            alert("Something went wrong.");
+          };
+      });
+  };
 
   return (
     <div className="flex flex-col overflow-hidden lg:gap-10 lg:flex-row ">
