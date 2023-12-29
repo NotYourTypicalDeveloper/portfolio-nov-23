@@ -8,11 +8,11 @@ import { ProfilePic } from "../atoms/ProfilePic.jsx";
 const Hero = () => {
   return (
     <>
-      <section className={`relative w-full h-auto py-10 lg:py-12 `}>
+      <section className={`relative w-full h-auto py-10 lg:py-12  `}>
         {/* Intro text___  */}
         <motion.div
           variants={textVariant()}
-          className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-16 flex flex-col lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-24 gap-10`}
+          className={`${styles.padding} mt-28 max-w-7xl mx-auto relative z-0 flex flex-col lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-24 gap-10`}
         >
           <div className="mx-auto lg:pr-12">
             <ProfilePic />

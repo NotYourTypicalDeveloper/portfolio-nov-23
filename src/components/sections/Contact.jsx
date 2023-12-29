@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = (e) => {};
 
   return (
-    <div className="flex flex-col overflow-hidden lg:gap-10 lg:flex-row">
+    <div className="flex flex-col overflow-hidden lg:gap-10 lg:flex-row ">
       {/* CONTACT FORM_____  */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
