@@ -4,7 +4,7 @@ import { styles } from "../../styles.js";
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: `${styles.cardBackgroundColor}`,
+      background: "#1b1b34",
       color: "#fff",
     }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}

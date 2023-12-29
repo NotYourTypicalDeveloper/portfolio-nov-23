@@ -4,8 +4,6 @@
   border: 7px solid rgb(99 102 241);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   background-size: cover;
-  background-position: top -10px center;
-  background-blend-mode: multiply;
   animation: morph 8s ease-in-out infinite;
 }
 
