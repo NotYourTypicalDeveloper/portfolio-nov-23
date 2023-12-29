@@ -5,7 +5,7 @@ import RPAicon from "./skill-cards-icons/RPAicon.png";
 import pingicon from "./skill-cards-icons/pingicon.png";
 import FEdevicon from "./skill-cards-icons/FEdevicon.png";
 import WebAppicon from "./skill-cards-icons/WebAppicon.png";
-import github from "./github.png";
+import github from "./tech-icons/github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 

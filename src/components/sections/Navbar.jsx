@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../datacontent/index.js";
-import { logo2, menu, close } from "../../assets/index.js";
+import { logo2, menu, close, github } from "../../assets/index.js";
+import LinkedInIcon from "../atoms/LinkedInIcon.jsx";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const linkedInURL = `https://www.linkedin.com/in/codingms/`;
+  const githubURL = "https://github.com/NotYourTypicalDeveloper";
 
   return (
     <nav
@@ -28,7 +31,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navbar links__ */}
-        <ul className="flex-row hidden gap-10 list-none sm:flex">
+        <ul className="flex-row hidden gap-10 list-none sm:flex ">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -42,6 +45,30 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li
+            key="LinkedIn-link-desktop"
+            className={`${
+              active === "LinkedIn" ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => setActive("LinkedIn")}
+          >
+            <a href={`${linkedInURL}`} className="ref" target="_blank">
+              <LinkedInIcon />
+            </a>
+          </li>
+          <li>
+            <a
+              href={`${githubURL}`}
+              target="_blank"
+              className="h-inherit max-h-5"
+            >
+              <img
+                src={github}
+                alt="github logo link"
+                className="object-cover h-8"
+              />
+            </a>
+          </li>
         </ul>
 
         {/* MOBILE VIEW 📱 ===========  */}
@@ -59,9 +86,9 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w [140px] z-10 rounded-xl`}
+          } p-6 w-[90%] bg-primary absolute top-20 right-0 mx-4 my-2 min-w [140px] z-10`}
         >
-          <ul className="flex flex-col items-start justify-end gap-4 list-none ">
+          <ul className="flex flex-col items-start justify-end gap-6 list-none ">
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -78,6 +105,35 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+
+            <li
+              key="linkedin-link-mobile"
+              className={`${
+                active === "LinkedIn" ? "text-white" : "text-secondary"
+              } font-poppins text-[16px] font-medium cursor-pointer`}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive("LinkedIn");
+              }}
+            >
+              <a href={`${linkedInURL}`} target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li
+              key="github-link-mobile"
+              className={`${
+                active === "Github" ? "text-white" : "text-secondary"
+              } font-poppins text-[16px] font-medium cursor-pointer`}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive("Github");
+              }}
+            >
+              <a href={`${githubURL}`} target="_blank">
+                Github
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import LinkedInIcon from "./atoms/LinkedInIcon.jsx";
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  LinkedInIcon,
 };

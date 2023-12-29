@@ -17,7 +17,7 @@ const styles = {
   cardBackgroundColor: "rgb(40 41 85)",
   cardTitle: "text-white text-[24px] font-semibold leading-10 mb-4",
   cardText: "text-secondary text-sm lg:text-base leading-7",
-  smallerCardText: "text-secondary text-xs lg:text-sm ",
+  smallerCardText: "text-secondary text-sm",
 };
 
 export { styles };
