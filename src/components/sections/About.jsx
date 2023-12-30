@@ -17,10 +17,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={` ${styles.sectionSubText}`}
       >
-        Driven and resourceful, I embarked on my coding journey in 2018. Since
-        then, I successfully built various apps & websites using my creative
-        thinking and logical skills. I have an interest in the algorithmic side
-        of programming, and am a automation, 3D, animations, and chatbots.
+        Driven and resourceful, I started my coding journey in 2018. Since then,
+        I successfully built various apps & websites using my creative thinking
+        and logical skills. I enjoy creating algorithms and I am a 3D,
+        animations, automation & chatbot enthusiast.
       </motion.p>
       <div className="flex flex-wrap justify-center gap-10 mt-16">
         {services.map((service, i) => (

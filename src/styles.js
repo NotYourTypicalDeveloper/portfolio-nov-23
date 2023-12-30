@@ -10,7 +10,7 @@ const styles = {
     "mt-10 text-[#dfd9ff] font-medium md:text-4xl text-2xl sm:text-3xl md:leading-relaxed",
   // SECTIONS
   sectionHeadText:
-    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10",
+    "text-white uppercase overline decoration-[#00cea8] md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10",
   sectionSubText: "sm:text-base xs:text-sm xl:text-lg text-secondary max-w-3xl",
 
   // CARDS

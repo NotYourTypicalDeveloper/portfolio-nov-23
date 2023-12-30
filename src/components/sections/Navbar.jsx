@@ -27,7 +27,9 @@ const Navbar = () => {
         >
           <img src={logo2} alt="logo" className="object-contain w-10 h-10" />
 
-          <p className="font-bold text-white">CH</p>
+          <p className="font-bold uppercase bg-gradient-pinkGreenGradient">
+            Caroline Ho
+          </p>
         </Link>
 
         {/* Navbar links__ */}
@@ -49,7 +51,7 @@ const Navbar = () => {
             key="LinkedIn-link-desktop"
             className={`${
               active === "LinkedIn" ? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            } hover:text-white text-[18px] font-medium mr-2 cursor-pointer`}
             onClick={() => setActive("LinkedIn")}
           >
             <a href={`${linkedInURL}`} className="ref" target="_blank">
