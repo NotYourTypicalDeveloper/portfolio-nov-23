@@ -1,10 +1,9 @@
-import React, { useState, useRef, Suspense } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../../styles.js";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
-import ComputersCanvas from "../canvas/Computers.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -118,7 +117,7 @@ const Contact = () => {
 
       {/* 3D MODEL SECTION_____ */}
       <div className="flex-1 overflow-hidden">
-        <ComputersCanvas />
+        WORK UNDER CONSTRUCTION 🚧🚧{" "}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 const styles = {
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-16 py-10",
+  padding: "sm:px-16 px-6 sm:py-16 py-10 2xl:py-24",
   // COLORS
   textColor2: "text-stone-200",
   heroHeadText:
@@ -10,8 +10,9 @@ const styles = {
     "mt-10 text-[#dfd9ff] font-medium md:text-4xl text-2xl sm:text-3xl md:leading-relaxed",
   // SECTIONS
   sectionHeadText:
-    "text-white uppercase overline decoration-[#00cea8] md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10",
-  sectionSubText: "sm:text-base xs:text-sm xl:text-lg text-secondary max-w-3xl",
+    "text-white uppercase overline decoration-[#00cea8] md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10 2xl:mb-20",
+  sectionSubText:
+    "sm:text-base xs:text-sm xl:text-lg text-secondary max-w-3xl 2xl:mb-20",
 
   // CARDS
   cardBackgroundColor: "rgb(40 41 85)",

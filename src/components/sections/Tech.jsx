@@ -2,8 +2,7 @@ import React from "react";
 import { styles } from "../../styles.js";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion.js";
-
-import { BallCanvas } from "../canvas/index.js";
+import { BallCanvas } from "../index.js";
 import { technologies } from "../../datacontent/index.js";
 import SectionWrapper from "../hoc/SectionWrapper.jsx";
 

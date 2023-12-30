@@ -1,8 +1,11 @@
-import { BallCanvas, ComputersCanvas, StarsCanvas } from "./canvas";
+import BallCanvas from "./canvas/BallCanvas";
+import StarsCanvas from "./canvas/StarsCanvas";
+
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import About from "./sections/About";
-import Tech from "./sections/Tech";
+import Tech from "./sections/Tech.jsx";
+
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
@@ -17,7 +20,6 @@ export {
   Projects,
   Contact,
   BallCanvas,
-  ComputersCanvas,
   StarsCanvas,
   LinkedInIcon,
 };
