@@ -7,7 +7,6 @@ import {
   Navbar,
   Tech,
   Projects,
-  StarsCanvas,
 } from "./components";
 
 function App() {
@@ -16,18 +15,10 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div>
           <Navbar />
-          <section className="relative w-full h-auto pt-10 mt-10 lg:pt-12 lg:mt-12">
+          <section className="relative h-lvh lg:h-[70vh] w-full pt-10 mt-10 lg:pt-12 lg:mt-12">
             <Hero />
-            <div
-              style={{
-                backgroundImage:
-                  "linear-gradient(to bottom, rgba(255,0,0,0) 20%, #050816 80%)",
-              }}
-            >
-              <About />
-            </div>
-            <StarsCanvas />
           </section>
+          <About />
         </div>
         <Experience />
         <Tech />

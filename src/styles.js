@@ -5,9 +5,9 @@ const styles = {
   // COLORS
   textColor2: "text-stone-200",
   heroHeadText:
-    "font-bold text-white text-4xl md:text-5xl md:leading-relaxed mb-8 lg:mb-6",
+    "font-bold text-white text-5xl md:text-6xl lg:text-7xl md:leading-relaxed mb-8 lg:mb-6",
   heroSubText:
-    "mt-10 text-[#dfd9ff] font-medium md:text-4xl text-2xl sm:text-3xl md:leading-relaxed",
+    "mt-10 text-[#dfd9ff] font-medium uppercase md:font-normal md:text-3xl text-xl sm:text-2xl sm:leading-10 md:leading-relaxed",
   // SECTIONS
   sectionHeadText:
     "text-white uppercase overline decoration-[#00cea8] md:text-[40px] sm:text-[30px] xs:text-[25px] text-[25px] mb-10 2xl:mb-20",
