@@ -4,6 +4,7 @@ import { styles } from "../../styles.js";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
+import GeometricCanvas from "../canvas/GeometricCanvas.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -55,13 +56,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col overflow-hidden lg:gap-10 lg:flex-row ">
+    <div className="flex flex-col lg:gap-10 lg:flex-row ">
       {/* CONTACT FORM_____  */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-1"
       >
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h2 className={styles.sectionHeadText}>
+          <span className={`marker-underlining`}>Contact.</span>
+        </h2>
 
         <form
           className="flex flex-col gap-8"
@@ -116,8 +119,8 @@ const Contact = () => {
       </motion.div>
 
       {/* 3D MODEL SECTION_____ */}
-      <div className="flex-1 overflow-hidden">
-        WORK UNDER CONSTRUCTION 🚧🚧{" "}
+      <div className="flex-1 bg-indigo-500">
+        <GeometricCanvas />
       </div>
     </div>
   );

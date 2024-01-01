@@ -130,7 +130,7 @@ const experiences = [
     date: "April 2022 - Now",
     points: [
       "Greenfield project",
-      "Rebuilt of an existing Shopify platform on the frontend side using modern framework and following Agile methodologies",
+      "Rebuild of our e-commerce site from the ground-up on frontend side using modern framework and following Agile methodologies",
       "Development of existing and brand new features",
       "Styling / fully responsive design matching Figma designs",
       "Connection to various APIs to integrate external data in and out of the site",
@@ -156,33 +156,6 @@ const experiences = [
       "Back end coding (light exposure to C#, Powershell)",
       "IT support",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -269,4 +242,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

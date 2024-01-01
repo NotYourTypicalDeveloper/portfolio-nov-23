@@ -10,7 +10,9 @@ const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>
+          <span className={`marker-underlining`}>Projects.</span>
+        </h2>
 
         <div>
           <motion.p

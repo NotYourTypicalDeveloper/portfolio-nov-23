@@ -38,7 +38,7 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title ? "text-white" : "text-indigo-500"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
@@ -47,13 +47,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li
-            key="LinkedIn-link-desktop"
-            className={`${
-              active === "LinkedIn" ? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium mr-2 cursor-pointer`}
-            onClick={() => setActive("LinkedIn")}
-          >
+          <li key="LinkedIn-link-desktop" onClick={() => setActive("LinkedIn")}>
             <a href={`${linkedInURL}`} className="ref" target="_blank">
               <LinkedInIcon />
             </a>
@@ -95,7 +89,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-secondary"
+                  active === link.title ? "text-white" : "text-indigo-500"
                 } font-poppins text-[16px] font-medium cursor-pointer`}
                 onClick={() => {
                   setToggle(!toggle);
@@ -111,7 +105,7 @@ const Navbar = () => {
             <li
               key="linkedin-link-mobile"
               className={`${
-                active === "LinkedIn" ? "text-white" : "text-secondary"
+                active === "LinkedIn" ? "text-white" : "text-indigo-500"
               } font-poppins text-[16px] font-medium cursor-pointer`}
               onClick={() => {
                 setToggle(!toggle);
@@ -125,7 +119,7 @@ const Navbar = () => {
             <li
               key="github-link-mobile"
               className={`${
-                active === "Github" ? "text-white" : "text-secondary"
+                active === "Github" ? "text-white" : "text-indigo-500"
               } font-poppins text-[16px] font-medium cursor-pointer`}
               onClick={() => {
                 setToggle(!toggle);

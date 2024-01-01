@@ -4,10 +4,14 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        RobotoMonoSS: ["Roboto Mono", "Sans-serif"],
+        Lato: ["Lato", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
+      },
       colors: {
         primary: "#050816",
         primary2: "#333851",
-
         secondary: "#aaa6c3",
         tertiary: "#1b1b34",
         "black-100": "#100d25",
@@ -25,3 +29,6 @@ module.exports = {
   },
   plugins: [],
 };
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Mono', monospace;
