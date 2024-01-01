@@ -15,6 +15,7 @@
   color-scheme: dark;
 }
 
+/* Section titles */
 .marker-underlining {
   padding: 30px 0 8px;
   position: relative;
@@ -27,7 +28,7 @@
   width: 100%;
   height: 1.2rem;
   transform: skew(-12deg) translateX(-50%);
-  background: #3f51b5;
+  background: #6473e8;
   z-index: -1;
 }
 

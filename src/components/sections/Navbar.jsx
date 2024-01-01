@@ -38,7 +38,7 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-indigo-500"
+                active === link.title ? "text-white" : "text-[#6473e8]"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
@@ -89,7 +89,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-indigo-500"
+                  active === link.title ? "text-white" : "text-[#6473e8]"
                 } font-poppins text-[16px] font-medium cursor-pointer`}
                 onClick={() => {
                   setToggle(!toggle);
@@ -105,7 +105,7 @@ const Navbar = () => {
             <li
               key="linkedin-link-mobile"
               className={`${
-                active === "LinkedIn" ? "text-white" : "text-indigo-500"
+                active === "LinkedIn" ? "text-white" : "text-[#6473e8]"
               } font-poppins text-[16px] font-medium cursor-pointer`}
               onClick={() => {
                 setToggle(!toggle);
@@ -119,7 +119,7 @@ const Navbar = () => {
             <li
               key="github-link-mobile"
               className={`${
-                active === "Github" ? "text-white" : "text-indigo-500"
+                active === "Github" ? "text-white" : "text-[#6473e8]"
               } font-poppins text-[16px] font-medium cursor-pointer`}
               onClick={() => {
                 setToggle(!toggle);
