@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion.js";
 import Tilt from "react-parallax-tilt";
-import { github } from "../../assets/index.js";
+import { github, iconlink } from "../../assets/index.js";
 import { styles } from "../../styles.js";
 
 const ProjectCard = ({
@@ -12,6 +12,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_site_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -32,21 +33,34 @@ const ProjectCard = ({
           />
         </div>
         {/* Github vignette___  */}
-        <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-          <div
-            onClick={() => window.open(source_code_link, "_blank")}
-            className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient"
-          >
-            <img
-              src={github}
-              alt="github"
-              className="object-contain w-1/2 h-1/2"
-            />
+        {source_code_link && (
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient hover:scale-125"
+            >
+              <img
+                src={github}
+                alt="github"
+                className="object-contain w-1/2 h-1/2"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
+        {/* TITLE and Link icon  */}
         <div className="mt-5">
-          <h3 className={`${styles.cardTitle}`}>{name}</h3>
+          <div className="flex items-center">
+            <h3 className={`${styles.cardTitle}`}>{name}</h3>
+            <a
+              className="ml-2 h-7 z-[2] hover:scale-125"
+              href={live_site_link}
+              target="_blank"
+            >
+              <img className="h-full " src={iconlink} alt="link icon" />
+            </a>
+          </div>
+
           <p className={`${styles.smallerCardText}`}>{description}</p>
         </div>
         {/* Hash tags___  */}

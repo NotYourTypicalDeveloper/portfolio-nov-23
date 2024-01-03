@@ -33,6 +33,8 @@ import chatbotcreenshot from "./projectsscreenshots/chatbot_screenshot.png";
 import contactformscreenshot from "./projectsscreenshots/contactform_screenshot.png";
 import formebikescreenshot from "./projectsscreenshots/formebike_screenshot.png";
 
+import iconlink from "./icons/link_icon.png";
+
 export {
   logo,
   logo2,
@@ -65,4 +67,5 @@ export {
   jest,
   profilePic,
   formebikescreenshot,
+  iconlink,
 };

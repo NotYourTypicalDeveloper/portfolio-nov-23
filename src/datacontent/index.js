@@ -188,7 +188,7 @@ const projects = [
       },
     ],
     image: bikeclubscreenshot,
-    source_code_link: "https://github.com/",
+    source_code_link: "",
     live_site_link: "https://bikeclub.com",
   },
   {
@@ -218,8 +218,8 @@ const projects = [
       },
     ],
     image: formebikescreenshot,
-    source_code_link: "https://forme-bikes.vercel.app/",
-    live_site_link: "https://bikeclub.comhttps://forme-bikes.vercel.app/",
+    source_code_link: "",
+    live_site_link: "https://forme-bikes.vercel.app/",
   },
   {
     name: "Chatbot",
@@ -243,7 +243,7 @@ const projects = [
     source_code_link:
       "https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant",
     live_site_link:
-      "https://notyourtypicaldeveloper.github.io/carolineVirtualAssitant/",
+      "https://notyourtypicaldeveloper.github.io/carolineVirtualAssistant/",
   },
   {
     name: "Job contact form",
