@@ -14,11 +14,11 @@ module.exports = {
         primary2: "#333851",
         secondary: "#aaa6c3",
         tertiary: "#1b1b34",
+        translucidWhite: "#ffffff12",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         greyBg2: "#363642",
-        translucidWhite: "#ffffff12",
         blackGradient:
           "linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)",
       },

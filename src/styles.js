@@ -14,7 +14,7 @@ const styles = {
     "font-RobotoMonoSS lg:leading-5 font-bold sm:text-base xs:text-sm xl:text-lg text-white max-w-3xl 2xl:mb-20",
 
   // CARDS
-  cardBackgroundColor: "rgb(40 41 85)",
+  cardBackgroundColor: "#ffffff12",
   cardTitle: "text-white text-[24px] font-semibold leading-10 mb-4",
   cardText: "text-secondary text-sm lg:text-base font-light leading-7",
   smallerCardText: "text-secondary text-sm",

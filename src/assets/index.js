@@ -31,6 +31,7 @@ import bauermedialogo from "./company/bauermedialogo.png";
 import bikeclubscreenshot from "./projectsscreenshots/bikeclub_screenshot.png";
 import chatbotcreenshot from "./projectsscreenshots/chatbot_screenshot.png";
 import contactformscreenshot from "./projectsscreenshots/contactform_screenshot.png";
+import formebikescreenshot from "./projectsscreenshots/formebike_screenshot.png";
 
 export {
   logo,
@@ -63,4 +64,5 @@ export {
   chakraUI,
   jest,
   profilePic,
+  formebikescreenshot,
 };

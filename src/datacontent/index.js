@@ -22,6 +22,7 @@ import {
   graphql,
   chakraUI,
   jest,
+  formebikescreenshot,
 } from "../assets";
 
 export const navLinks = [
@@ -163,7 +164,7 @@ const projects = [
   {
     name: "Bike Club",
     description:
-      "Rebuilt & refurbishment of the Bike Club's existing e-commerce platform using a substantial and modern FE tech stack, establishing various API connections to retrieve data from various end points",
+      "Rebuilt from scratch of the Bike Club's existing e-commerce platform using a substantial and modern FE tech stack, establishing various API connections to retrieve data from different end points",
     tags: [
       {
         name: "react",
@@ -191,9 +192,39 @@ const projects = [
     live_site_link: "https://bikeclub.com",
   },
   {
+    name: "Forme Bikes",
+    description:
+      "Current project for the brand Forme bikes, owned by Bike Club. Simple website, with the use of React Server components. Under construction",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs-14",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pandaCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "graphQl",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: formebikescreenshot,
+    source_code_link: "https://forme-bikes.vercel.app/",
+    live_site_link: "https://bikeclub.comhttps://forme-bikes.vercel.app/",
+  },
+  {
     name: "Chatbot",
     description:
-      "Personal project. Customized chatbot/virtual assistant to reply to screening questions from recruiters, as well as non-work-related conversations. The chatbot provides diverse menus and clickable option tags for user interaction, incorporating a functionality for open-ended questions.",
+      "Personal project. Customized chatbot/virtual assistant to reply to screening questions from recruiters, and non-work-related conversations. The chatbot provides diverse menus and clickable option tags for user interaction, as well as open-ended questions.",
     tags: [
       {
         name: "react-simple-chatbot",
@@ -237,7 +268,8 @@ const projects = [
       },
     ],
     image: contactformscreenshot,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/NotYourTypicalDeveloper/job-contact-form",
     live_site_link: "https://job-contact-form.vercel.app/",
   },
 ];
