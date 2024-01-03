@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../datacontent/index.js";
-import { logo2, menu, close, github } from "../../assets/index.js";
+import { diamond_logo, menu, close, github } from "../../assets/index.js";
 import LinkedInIcon from "../atoms/LinkedInIcon.jsx";
 
 const Navbar = () => {
@@ -25,10 +25,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo2} alt="logo" className="object-contain w-10 h-10" />
+          <img
+            src={diamond_logo}
+            alt="logo"
+            className="object-contain w-12 h-12 lg:w-14"
+          />
 
-          <p className="hidden font-normal uppercase bg-gradient-pinkGreenGradient lg:block">
-            Caroline Ho
+          <p className="hidden font-normal bg-gradient-pinkGreenGradient lg:block">
+            Caroline_Ho
           </p>
         </Link>
 
