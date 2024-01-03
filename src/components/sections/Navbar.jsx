@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           <img src={logo2} alt="logo" className="object-contain w-10 h-10" />
 
-          <p className="hidden font-normal uppercase bg-gradient-pinkGreenGradient md:block">
+          <p className="hidden font-normal uppercase bg-gradient-pinkGreenGradient lg:block">
             Caroline Ho
           </p>
         </Link>

@@ -119,7 +119,7 @@ const Contact = () => {
       </motion.div>
 
       {/* 3D MODEL SECTION_____ */}
-      <div className="flex-1 bg-indigo-500">
+      <div className="flex-1 mt-6 bg-indigo-500 lg:mt-0">
         <GeometricCanvas />
       </div>
     </div>

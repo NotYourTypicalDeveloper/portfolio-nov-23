@@ -27,7 +27,7 @@ const Projects = () => {
           </motion.p>
         </div>
 
-        <div className="flex flex-wrap justify-center mt-16 gap-7">
+        <div className="grid grid-cols-1 mt-16 justify-items-center lg:justify-items-start lg:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} {...project} index={index} />
           ))}
