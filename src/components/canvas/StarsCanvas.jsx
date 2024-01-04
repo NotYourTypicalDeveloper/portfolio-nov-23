@@ -36,7 +36,7 @@ const StarsCanvas = () => {
       height="100%"
       style={{ position: "absolute", inset: 0 }}
       camera={{ position: [0, 0, 1] }}
-      gl={{ preserveDrawingBuffer: true, alpha: true }}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={null}>
         <Stars />
