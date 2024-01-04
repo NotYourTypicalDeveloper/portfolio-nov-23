@@ -1,11 +1,10 @@
-import { OrbitControls } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import Cube3D from "../atoms/Cube3D.jsx";
 import Cylinder3d from "../atoms/Cylinder3D.jsx";
 
 const GeometricCanvas = () => {
   return (
-    <Canvas>
+    <Canvas width="100%" height="100%">
       <pointLight position={[10, 10, 10]} />
       <ambientLight />
       {/* bonbon full */}
