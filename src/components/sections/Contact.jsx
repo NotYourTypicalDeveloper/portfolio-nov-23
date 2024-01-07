@@ -1,10 +1,11 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { styles } from "../../styles.js";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
 import GeometricCanvas from "../canvas/GeometricCanvas.jsx";
+
+import SectionTitle from "../hoc/SectionTitle.jsx";
 
 const Contact = () => {
   const formRef = useRef();
@@ -62,9 +63,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-1"
       >
-        <h2 className={styles.sectionHeadText}>
-          <span className={`marker-underlining`}>Contact.</span>
-        </h2>
+        <SectionTitle title="Contact" />
 
         <form
           className="flex flex-col gap-8"

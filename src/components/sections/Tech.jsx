@@ -1,16 +1,20 @@
 import React from "react";
-import { styles } from "../../styles.js";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion.js";
 import { BallCanvas } from "../index.js";
 import { technologies } from "../../datacontent/index.js";
 import SectionWrapper from "../hoc/SectionWrapper.jsx";
 
+import SectionTitle from "../hoc/SectionTitle.jsx";
+
 const Tech = () => {
   // ONLY FOR ANDROID devices
   if (navigator.userAgent.match(/Android/i)) {
     return (
       <div>
+        <motion.div variants={textVariant()}>
+          <SectionTitle title="Technologies" />
+        </motion.div>
         <div className="flex flex-row flex-wrap justify-center my-16 gap-14">
           {technologies.map((tech) => (
             <div className="w-28 h-28" key={tech.name}>
@@ -34,12 +38,9 @@ const Tech = () => {
     return (
       <>
         <motion.div variants={textVariant()}>
-          <h2>
-            <span className={`${styles.sectionHeadText} marker-underlining`}>
-              Technologies.
-            </span>
-          </h2>
+          <SectionTitle title="Technologies" />
         </motion.div>
+
         <div className="flex flex-row flex-wrap justify-center gap-10 mt-16">
           {technologies.map((tech) => (
             <div className="w-28 h-28" key={tech.name}>

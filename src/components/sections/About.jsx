@@ -6,13 +6,13 @@ import { services } from "../../datacontent/index.js";
 import { fadeIn, textVariant } from "../../utils/motion.js";
 import SectionWrapper from "../hoc/SectionWrapper.jsx";
 
+import SectionTitle from "../hoc/SectionTitle.jsx";
+
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>
-          <span className={`marker-underlining`}>About.</span>
-        </h2>
+        <SectionTitle title="About" />
       </motion.div>
 
       <motion.p
