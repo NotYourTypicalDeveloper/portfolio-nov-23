@@ -35,6 +35,11 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "tech",
+    title: "Tech",
+  },
+
+  {
     id: "projects",
     title: "Projects",
   },
@@ -89,35 +94,35 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "sharepoint",
+    name: "Sharepoint",
     icon: sharepoint,
   },
   {
-    name: "nextjs",
+    name: "Nextjs",
     icon: nextjs,
   },
   {
-    name: "powerautomate",
+    name: "Power Automate",
     icon: powerautomate,
   },
   {
-    name: "graphQl",
+    name: "GraphQl",
     icon: graphql,
   },
   {
-    name: "chakraUI",
+    name: "Chakra UI",
     icon: chakraUI,
   },
   {
-    name: "jest",
+    name: "Jest",
     icon: jest,
   },
 ];
@@ -194,7 +199,7 @@ const projects = [
   {
     name: "Forme Bikes",
     description:
-      "Current project for the brand Forme bikes, owned by Bike Club. Simple website, with the use of React Server components. Under construction",
+      "I am currently leading, architecting and coding this current project on my own for the brand Forme bikes recently acquired by my company. Simple website, with the use of React Server components.",
     tags: [
       {
         name: "react",
