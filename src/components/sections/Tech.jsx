@@ -11,6 +11,13 @@ const Tech = () => {
   if (navigator.userAgent.match(/Android/i)) {
     return (
       <div>
+        <motion.div variants={textVariant()}>
+          <h2>
+            <span className={`${styles.sectionHeadText} marker-underlining`}>
+              Technologies.
+            </span>
+          </h2>
+        </motion.div>
         <div className="flex flex-row flex-wrap justify-center my-16 gap-14">
           {technologies.map((tech) => (
             <div className="w-28 h-28" key={tech.name}>

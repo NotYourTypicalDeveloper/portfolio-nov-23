@@ -1,5 +1,5 @@
 import React from "react";
-import "../../CircleImageStyles.css";
+import "../../CSS/CircleImageStyles.css";
 import { profilePic } from "../../assets/index.js";
 
 export const ProfilePic = () => {

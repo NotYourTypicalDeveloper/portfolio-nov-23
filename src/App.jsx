@@ -7,6 +7,7 @@ import {
   Navbar,
   Tech,
   Projects,
+  Questions,
 } from "./components";
 
 function App() {
@@ -21,11 +22,14 @@ function App() {
           <About />
         </div>
         <Experience />
-        <Tech />
+        <section className="dot-pattern-bg">
+          <Tech />
+        </section>
         <Projects />
         <div className="relative z-0">
           <Contact />
         </div>
+        <Questions />
       </div>
     </BrowserRouter>
   );

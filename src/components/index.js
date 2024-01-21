@@ -9,6 +9,7 @@ import Tech from "./sections/Tech.jsx";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Questions from "./sections/Questions.jsx";
 import LinkedInIcon from "./atoms/LinkedInIcon.jsx";
 
 export {
@@ -22,4 +23,5 @@ export {
   BallCanvas,
   StarsCanvas,
   LinkedInIcon,
+  Questions,
 };

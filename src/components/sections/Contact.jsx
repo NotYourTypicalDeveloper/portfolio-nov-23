@@ -56,73 +56,75 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col lg:gap-10 lg:flex-row ">
-      {/* CONTACT FORM_____  */}
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-1"
-      >
-        <h2 className={styles.sectionHeadText}>
-          <span className={`marker-underlining`}>Contact.</span>
-        </h2>
-
-        <form
-          className="flex flex-col gap-8"
-          ref={formRef}
-          onSubmit={handleSubmit}
+    <>
+      <div className="flex flex-col lg:gap-10 lg:flex-row ">
+        {/* CONTACT FORM_____  */}
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-1"
         >
-          {/* Name___ */}
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Roger Rabbit"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-            />
-          </label>
+          <h2 className={styles.sectionHeadText}>
+            <span className={`marker-underlining`}>Contact.</span>
+          </h2>
 
-          {/* EmailL___ */}
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your E-mail</span>
-            <input
-              type="text"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="roger@rabbit.com"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-            />
-          </label>
-
-          {/* Message___ */}
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your message</span>
-            <textarea
-              rows="7"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Write your message here"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-            />
-          </label>
-          <button
-            type="submit"
-            className="px-8 py-3 text-white uppercase border-2 border-solid shadow-md outline-none white bg-tertiary rounded-xl w-fit shadow-primary"
+          <form
+            className="flex flex-col gap-8"
+            ref={formRef}
+            onSubmit={handleSubmit}
           >
-            {loading ? "sending..." : "Send"}
-          </button>
-        </form>
-      </motion.div>
+            {/* Name___ */}
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Your name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Roger Rabbit"
+                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              />
+            </label>
 
-      {/* 3D MODEL SECTION_____ */}
-      <div className="flex-1 mt-6 bg-indigo-500 lg:mt-0">
-        <GeometricCanvas />
+            {/* EmailL___ */}
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Your E-mail</span>
+              <input
+                type="text"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="roger@rabbit.com"
+                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              />
+            </label>
+
+            {/* Message___ */}
+            <label className="flex flex-col">
+              <span className="mb-4 font-medium text-white">Your message</span>
+              <textarea
+                rows="7"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Write your message here"
+                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              />
+            </label>
+            <button
+              type="submit"
+              className="px-8 py-3 text-white uppercase border-2 border-solid shadow-md outline-none white bg-tertiary rounded-xl w-fit shadow-primary"
+            >
+              {loading ? "sending..." : "Send"}
+            </button>
+          </form>
+        </motion.div>
+
+        {/* 3D MODEL SECTION_____ */}
+        <div className="flex-1 mt-8 bg-indigo-500 lg:mt-0">
+          <GeometricCanvas />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
