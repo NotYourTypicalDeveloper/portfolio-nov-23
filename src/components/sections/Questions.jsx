@@ -1,30 +1,24 @@
 import React from "react";
 import { chatboticoncontact } from "../../assets/index.js";
 import { styles } from "../../styles.js";
-import SectionWrapper from "../hoc/SectionWrapper.jsx";
-import { motion } from "framer-motion";
-import { textVariant } from "../../utils/motion.js";
 import "../../CSS/ButtonStyles.css";
 
 const Questions = () => {
   return (
-    <>
-      <motion.div variants={textVariant()} className="flex">
+    <section className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+      <div className="flex flex-col lg:flex-row lg:justify-between">
+        <h2 className={styles.sectionHeadText}>
+          <span className={`marker-underlining`}>Questions / request ...</span>
+        </h2>
+
         <img
           src={chatboticoncontact}
           alt="chatbot image"
-          className="object-cover absolute origin-top-left rotate-12 h:28 w-28 top-8 right-1 md:right-[-2rem] lg:right-[-2rem] lg:top-14 lg:h-36 lg:w-36"
+          className="object-cover w-20 origin-top-left rotate-12 h:20 lg:h-28 lg:w-28"
         />
-        <h2>
-          <span className={`${styles.sectionHeadText} marker-underlining`}>
-            Questions?
-          </span>
-        </h2>
-      </motion.div>
-      <p className={`${styles.sectionSubText} mt-16`}>
-        Any questions, or request to send, click on ...
-      </p>
-      <div className="flex flex-col justify-around gap-20 mt-16 lg:flex lg:flex-row">
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 mt-6 justify-items-center md:grid-cols-2">
         <a
           href="https://notyourtypicaldeveloper.github.io/carolineVirtualAssistant/"
           className="button type--C"
@@ -46,8 +40,8 @@ const Questions = () => {
           <div className="button__drow2"></div>
         </a>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(Questions, "questions");
+export default Questions;

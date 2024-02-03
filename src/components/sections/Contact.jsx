@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
 import GeometricCanvas from "../canvas/GeometricCanvas.jsx";
+import "../../CSS/ButtonStyles.css";
 
 const Contact = () => {
   const formRef = useRef();
@@ -110,11 +111,12 @@ const Contact = () => {
                 className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
               />
             </label>
-            <button
-              type="submit"
-              className="px-8 py-3 text-white uppercase border-2 border-solid shadow-md outline-none white bg-tertiary rounded-xl w-fit shadow-primary"
-            >
-              {loading ? "sending..." : "Send"}
+            <button type="submit" className="mx-auto button type--A">
+              <div className="button__line"></div>
+              <div className="button__line"></div>
+              <span className="button__text">
+                {loading ? "sending..." : "Send"}
+              </span>
             </button>
           </form>
         </motion.div>
