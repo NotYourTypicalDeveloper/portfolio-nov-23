@@ -3,12 +3,12 @@
   --back_color: #ffecf6;
 }
 .type--B {
-  --line_color: rgb(26, 237, 237);
-  --back_color: #e9ecff;
+  --line_color: rgb(26, 207, 207);
+  --back_color: #0f6956;
 }
 .type--C {
-  --line_color: #bf61ff;
-  --back_color: #defffa;
+  --line_color: #c05af3;
+  --back_color: #462f6e;
 }
 .button {
   position: relative;
