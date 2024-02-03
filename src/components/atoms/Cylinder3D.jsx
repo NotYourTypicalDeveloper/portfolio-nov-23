@@ -9,7 +9,6 @@ const Cylinder3d = (props) => {
   const [clicked, click] = useState(false);
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) => (meshRef.current.rotation.x += 0.01));
-
   return (
     <mesh
       {...props}
@@ -22,7 +21,7 @@ const Cylinder3d = (props) => {
       <cylinderGeometry args={[1, 1, 1]} />
       <meshStandardMaterial
         wireframe={props.wireframe}
-        color={hovered ? "hotpink" : "orange"}
+        color={hovered ? "hotpink" : props.color}
       />
     </mesh>
   );
