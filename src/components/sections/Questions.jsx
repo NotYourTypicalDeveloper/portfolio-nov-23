@@ -7,8 +7,8 @@ const Questions = () => {
   return (
     <section className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
       <div className="flex flex-col lg:flex-row lg:justify-between">
-        <h2 className={styles.sectionHeadText}>
-          <span className={`marker-underlining`}>Questions / request ...</span>
+        <h2 className="mb-10 text-xl font-RobotoMonoSS md:text-2xl 2xl:mb-20">
+          Ask any question or send a request ...
         </h2>
 
         <img

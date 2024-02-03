@@ -8,6 +8,7 @@ import {
   Tech,
   Projects,
   Questions,
+  Footer,
 } from "./components";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Contact />
         </div>
         <Questions />
+        <Footer />
       </div>
     </BrowserRouter>
   );

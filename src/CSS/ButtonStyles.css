@@ -3,7 +3,7 @@
   --back_color: #ffecf6;
 }
 .type--B {
-  --line_color: #667eea;
+  --line_color: rgb(26, 237, 237);
   --back_color: #e9ecff;
 }
 .type--C {

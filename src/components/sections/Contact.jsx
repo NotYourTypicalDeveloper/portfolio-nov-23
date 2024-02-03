@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../../styles.js";
 import { SectionWrapper } from "../hoc";
@@ -122,7 +122,7 @@ const Contact = () => {
         </motion.div>
 
         {/* 3D MODEL SECTION_____ */}
-        <div className="flex-1 mt-8 bg-indigo-500 lg:mt-0">
+        <div className="flex-1 mt-8 lg:mt-0">
           <GeometricCanvas />
         </div>
       </div>
