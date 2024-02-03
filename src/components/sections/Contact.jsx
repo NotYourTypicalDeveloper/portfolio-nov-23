@@ -65,65 +65,64 @@ const Contact = () => {
       >
         <SectionTitle title="Contact" />
 
-          <form
-            className="flex flex-col gap-8"
-            ref={formRef}
-            onSubmit={handleSubmit}
-          >
-            {/* Name___ */}
-            <label className="flex flex-col">
-              <span className="mb-4 font-medium text-white">Your name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Roger Rabbit"
-                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-              />
-            </label>
+        <form
+          className="flex flex-col gap-8"
+          ref={formRef}
+          onSubmit={handleSubmit}
+        >
+          {/* Name___ */}
+          <label className="flex flex-col">
+            <span className="mb-4 font-medium text-white">Your name</span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Roger Rabbit"
+              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+            />
+          </label>
 
-            {/* EmailL___ */}
-            <label className="flex flex-col">
-              <span className="mb-4 font-medium text-white">Your E-mail</span>
-              <input
-                type="text"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="roger@rabbit.com"
-                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-              />
-            </label>
+          {/* EmailL___ */}
+          <label className="flex flex-col">
+            <span className="mb-4 font-medium text-white">Your E-mail</span>
+            <input
+              type="text"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="roger@rabbit.com"
+              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+            />
+          </label>
 
-            {/* Message___ */}
-            <label className="flex flex-col">
-              <span className="mb-4 font-medium text-white">Your message</span>
-              <textarea
-                rows="7"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Write your message here"
-                className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
-              />
-            </label>
-            <button type="submit" className="mx-auto button type--A">
-              <div className="button__line"></div>
-              <div className="button__line"></div>
-              <span className="button__text">
-                {loading ? "sending..." : "Send"}
-              </span>
-            </button>
-          </form>
-        </motion.div>
+          {/* Message___ */}
+          <label className="flex flex-col">
+            <span className="mb-4 font-medium text-white">Your message</span>
+            <textarea
+              rows="7"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Write your message here"
+              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+            />
+          </label>
+          <button type="submit" className="mx-auto button type--A">
+            <div className="button__line"></div>
+            <div className="button__line"></div>
+            <span className="button__text">
+              {loading ? "sending..." : "Send"}
+            </span>
+          </button>
+        </form>
+      </motion.div>
 
-        {/* 3D MODEL SECTION_____ */}
-        <div className="flex-1 mt-8 lg:mt-0">
-          <GeometricCanvas />
-        </div>
+      {/* 3D MODEL SECTION_____ */}
+      <div className="flex-1 mt-8 lg:mt-0">
+        <GeometricCanvas />
       </div>
-    </>
+    </div>
   );
 };
 
