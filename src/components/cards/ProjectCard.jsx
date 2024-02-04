@@ -22,7 +22,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-xl sm:w-[360px] w-full h-full"
+        className="bg-translucidWhite p-5 rounded-xl sm:w-[360px] w-full h-full"
       >
         {/* Project screenshot___  */}
         <div className="relative w-full h-[230px]">

@@ -4,6 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../../utils/motion.js";
 import { motion } from "framer-motion";
 import GeometricCanvas from "../canvas/GeometricCanvas.jsx";
+import { styles } from "../../styles.js";
 
 import SectionTitle from "../hoc/SectionTitle.jsx";
 
@@ -79,7 +80,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Roger Rabbit"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              className={`${styles.formInput}`}
             />
           </label>
 
@@ -92,7 +93,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="roger@rabbit.com"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              className={`${styles.formInput}`}
             />
           </label>
 
@@ -105,7 +106,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Write your message here"
-              className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"
+              className={`${styles.formInput}`}
             />
           </label>
           <button type="submit" className="mx-auto button type--A">

@@ -33,7 +33,7 @@ import contactformscreenshot from "./projectsscreenshots/contactform_screenshot.
 import formebikescreenshot from "./projectsscreenshots/formebike_screenshot.png";
 
 import iconlink from "./icons/link_icon.png";
-import chatboticoncontact from "./icons/chatbot_icon_contact.svg";
+import linkedinlogo from "./icons/linkedin_logo.png";
 
 export {
   diamond_logo,
@@ -67,5 +67,5 @@ export {
   profilePic,
   formebikescreenshot,
   iconlink,
-  chatboticoncontact,
+  linkedinlogo,
 };

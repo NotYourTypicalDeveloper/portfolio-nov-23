@@ -1,22 +1,12 @@
-import React from "react";
-import { chatboticoncontact } from "../../assets/index.js";
 import { styles } from "../../styles.js";
 import "../../CSS/ButtonStyles.css";
 
 const Questions = () => {
   return (
-    <section className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
-      <div className="flex flex-col lg:flex-row lg:justify-between">
-        <h2 className="mb-10 text-lg md:text-xl xl:text-2xl font-RobotoMonoSS 2xl:mb-20">
-          Ask any question or send a request ...
-        </h2>
-
-        <img
-          src={chatboticoncontact}
-          alt="chatbot image"
-          className="object-cover w-20 origin-top-left rotate-12 h:20 lg:h-28 lg:w-28"
-        />
-      </div>
+    <section className={`${styles.padding} max-w-7xl mx-auto `}>
+      <h2 className="text-[24px] font-semibold leading-10 mb-20">
+        Any questions?
+      </h2>
 
       <div className="grid grid-cols-1 gap-6 mt-6 justify-items-center md:grid-cols-2">
         <a

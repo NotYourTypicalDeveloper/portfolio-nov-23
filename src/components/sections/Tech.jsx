@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion.js";
 import { BallCanvas } from "../index.js";

@@ -8,7 +8,7 @@ const GeometricCanvas = () => {
       <pointLight position={[10, 10, 10]} />
       <ambientLight />
       {/* bonbon full */}
-      <Cylinder3d color="#5c68e6" position={[3, -2, 0]} />
+      <Cylinder3d color="aqua" position={[3, -2, 0]} />
       <ambientLight color="pink" intensity={1.5} />
       <pointLight position={[10, 10, 10]} />
       <Cylinder3d color="#0c8181" position={[-2.2, 3, 0]} wireframe={true} />

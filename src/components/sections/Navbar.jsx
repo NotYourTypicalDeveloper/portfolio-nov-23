@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../datacontent/index.js";
-import { diamond_logo, menu, close, github } from "../../assets/index.js";
+import {
+  diamond_logo,
+  menu,
+  close,
+  github,
+  linkedinlogo,
+} from "../../assets/index.js";
 import LinkedInIcon from "../atoms/LinkedInIcon.jsx";
 
 const Navbar = () => {
@@ -37,7 +43,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navbar links__ */}
-        <ul className="flex-row hidden gap-10 list-none sm:flex ">
+        <ul className="flex-row items-center hidden gap-8 list-none lg:gap-10 sm:flex">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -51,21 +57,21 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li key="LinkedIn-link-desktop" onClick={() => setActive("LinkedIn")}>
-            <a href={`${linkedInURL}`} className="ref" target="_blank">
-              <LinkedInIcon />
+          <li key="LinkedIn-link-desktop">
+            <a href={`${linkedInURL}`} target="_blank">
+              <img
+                src={linkedinlogo}
+                alt="linkedin logo link"
+                className="object-cover w-auto h-6"
+              />
             </a>
           </li>
           <li>
-            <a
-              href={`${githubURL}`}
-              target="_blank"
-              className="h-inherit max-h-5"
-            >
+            <a href={`${githubURL}`} target="_blank">
               <img
                 src={github}
                 alt="github logo link"
-                className="object-cover h-8"
+                className="object-cover w-auto h-8"
               />
             </a>
           </li>

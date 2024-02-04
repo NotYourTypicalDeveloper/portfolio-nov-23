@@ -10,6 +10,7 @@ import {
   Questions,
   Footer,
 } from "./components";
+import "./CSS/SlantedDivs.css";
 
 function App() {
   return (
@@ -22,15 +23,19 @@ function App() {
           </section>
           <About />
         </div>
-        <Experience />
         <section className="dot-pattern-bg">
-          <Tech />
+          <Experience />
         </section>
-        <Projects />
+        <Tech />
+        <div className="slantedDivA">
+          <Projects />
+        </div>
         <div className="relative z-0">
           <Contact />
         </div>
-        <Questions />
+        <div className="slantedDivA">
+          <Questions />
+        </div>
         <Footer />
       </div>
     </BrowserRouter>

@@ -12,7 +12,9 @@ const styles = {
   sectionHeadText: "text-white uppercase md:text-5xl text-4xl mb-10 2xl:mb-20",
   sectionSubText:
     "font-RobotoMonoSS lg:leading-5 font-bold sm:text-base xs:text-sm xl:text-lg text-white max-w-3xl 2xl:mb-20",
-
+  // INPUTS
+  formInput:
+    "px-6 py-4 text-white border-none rounded-lg bg-translucidWhite placeholder:text-secondary outlined-none",
   // CARDS
   cardBackgroundColor: "#ffffff12",
   cardTitle: "text-white text-[24px] font-semibold leading-10 mb-4",
