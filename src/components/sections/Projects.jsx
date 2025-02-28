@@ -18,14 +18,13 @@ const Projects = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={`${styles.sectionSubText}`}
       >
-        Recent Real-world professional projects and Hobby Side-projects. Click
-        on the link icons to see the deployed project and the github icon to see
-        the repo. Note that some projects are not available as they were
-        internal applications not open to the public. More side projects are
-        available on Github.
+        Explore my recent professional work and hobby projects. Click the link
+        icons for live demos and the GitHub icon to view the repositories. Some
+        projects are internal and not publicly available, while additional side
+        projects can be found on GitHub.
       </motion.p>
 
-      <div className="grid grid-cols-1 mt-16 justify-items-center lg:justify-items-start lg:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
+      <div className="grid grid-cols-1 mt-16 justify-items-center xl:justify-items-start lg:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-10">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}

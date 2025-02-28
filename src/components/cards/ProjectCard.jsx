@@ -51,14 +51,17 @@ const ProjectCard = ({
         {/* TITLE and Link icon  */}
         <div className="mt-5">
           <div className="flex items-center">
-            <h3 className={`${styles.cardTitle}`}>{name}</h3>
-            <a
-              className="ml-2 h-7 z-[2] hover:scale-125"
-              href={live_site_link}
-              target="_blank"
-            >
-              <img className="h-full " src={iconlink} alt="link icon" />
-            </a>
+            <h3 className={`${styles.cardTitle} min-h-24`}>{name}</h3>
+
+            {live_site_link && (
+              <a
+                className="ml-2 z-[2] hover:scale-125"
+                href={live_site_link}
+                target="_blank"
+              >
+                <img className="h-5 " src={iconlink} alt="link icon" />
+              </a>
+            )}
           </div>
 
           <p className={`${styles.smallerCardText}`}>{description}</p>
@@ -67,7 +70,7 @@ const ProjectCard = ({
         <div className="flex flex-wrap gap-2 mt-4">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[0.85rem] ${tag.color}`}>
-              #{tag.name}
+              #{tag.name.toLowerCase()}
             </p>
           ))}
         </div>

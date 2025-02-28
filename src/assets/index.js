@@ -31,6 +31,8 @@ import bikeclubscreenshot from "./projectsscreenshots/bikeclub_screenshot.png";
 import chatbotcreenshot from "./projectsscreenshots/chatbot_screenshot.png";
 import contactformscreenshot from "./projectsscreenshots/contactform_screenshot.png";
 import formebikescreenshot from "./projectsscreenshots/formebike_screenshot.png";
+import vpostits_screenshot from "./projectsscreenshots/virtualpostits.png";
+import sharepointwheel from "./projectsscreenshots/sharepoint-wheel.png";
 
 import iconlink from "./icons/link_icon.png";
 import linkedinlogo from "./icons/linkedin_logo.png";
@@ -58,6 +60,7 @@ export {
   bikeclubscreenshot,
   chatbotcreenshot,
   contactformscreenshot,
+  vpostits_screenshot,
   sharepoint,
   nextjs,
   powerautomate,
@@ -68,4 +71,5 @@ export {
   formebikescreenshot,
   iconlink,
   linkedinlogo,
+  sharepointwheel,
 };

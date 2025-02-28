@@ -23,6 +23,8 @@ import {
   chakraUI,
   jest,
   formebikescreenshot,
+  vpostits_screenshot,
+  sharepointwheel,
 } from "../assets";
 
 export const navLinks = [
@@ -169,7 +171,7 @@ const projects = [
   {
     name: "Bike Club",
     description:
-      "Rebuilt from scratch of the Bike Club's existing e-commerce platform using a substantial and modern FE tech stack, establishing various API connections to retrieve data from different end points",
+      "2022- 2024: Rebuilt from scratch of the Bike Club's existing e-commerce platform using a substantial and modern FE tech stack, establishing various API connections to retrieve data from different end points",
     tags: [
       {
         name: "react",
@@ -199,7 +201,7 @@ const projects = [
   {
     name: "Forme Bikes",
     description:
-      "I am currently leading, architecting and coding this current project on my own for the brand Forme bikes recently acquired by my company. Simple website, with the use of React Server components.",
+      "2023: Independently developed, and architected the landing page for Forme Bikes using React Server Components, handling the entire process from start to finish without supervision.",
     tags: [
       {
         name: "react",
@@ -223,13 +225,13 @@ const projects = [
       },
     ],
     image: formebikescreenshot,
-    source_code_link: "",
+    source_code_link: null,
     live_site_link: "https://forme-bikes.vercel.app/",
   },
   {
     name: "Chatbot",
     description:
-      "Personal project. Customized chatbot/virtual assistant to reply to screening questions from recruiters, and non-work-related conversations. The chatbot provides diverse menus and clickable option tags for user interaction, as well as open-ended questions.",
+      "2023: Personal project. Customized chatbot/virtual assistant to reply to screening questions from recruiters, and non-work-related conversations. The chatbot provides diverse menus and clickable option tags for user interaction, as well as open-ended questions.",
     tags: [
       {
         name: "react-simple-chatbot",
@@ -253,7 +255,7 @@ const projects = [
   {
     name: "Job contact form",
     description:
-      "Personal project. Multi-step contact form tailored for recruiters, companies, enabling the straightforward submission of job specifications directly to my Gmail inbox. Boasting user-friendly features: navigation buttons, a graphical progress bar, and diverse input types",
+      "2023: Personal project. Multi-step contact form tailored for recruiters, companies, enabling the straightforward submission of job specifications directly to my Gmail inbox. Boasting user-friendly features: navigation buttons, a graphical progress bar, and diverse input types",
     tags: [
       {
         name: "reactjs",
@@ -276,6 +278,67 @@ const projects = [
     source_code_link:
       "https://github.com/NotYourTypicalDeveloper/job-contact-form",
     live_site_link: "https://job-contact-form.vercel.app/",
+  },
+  {
+    name: "Virtual Post-its",
+    description:
+      "2024: Personal project, desktop only web app that mimics real sticky notes with drag-and-drop functionality, helping users organize tasks and ideas effortlessly. Features include note creation, editing, archiving, bulk actions, keyboard shortcuts, and persistent local storage. Not suitable for mobiles.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React-toastify",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: vpostits_screenshot,
+    source_code_link:
+      "https://github.com/NotYourTypicalDeveloper/virtual-postit",
+    live_site_link: "https://virtual-postit.vercel.app/",
+  },
+  {
+    name: "SharePoint business applications",
+    description:
+      "2019-2022: End-to-end development, maintenance, and optimization of business web applications built on SharePoint, seamlessly integrated with Microsoft 365 services, automation workflows, and communication systems.",
+    tags: [
+      {
+        name: "PowerAutomate",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "SharePoint",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML5",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ASP.net",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: sharepointwheel,
+    source_code_link: null,
+    live_site_link: null,
   },
 ];
 
