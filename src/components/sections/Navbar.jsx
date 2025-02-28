@@ -9,7 +9,6 @@ import {
   github,
   linkedinlogo,
 } from "../../assets/index.js";
-import LinkedInIcon from "../atoms/LinkedInIcon.jsx";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
