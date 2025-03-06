@@ -1,5 +1,5 @@
 import diamond_logo from "./my-logo/diamond_logo.svg";
-import profilePic from "./profile-pic.jpeg";
+import profilePic from "./profile-pic.webp";
 import RPAicon from "./skill-cards-icons/RPAicon.png";
 import pingicon from "./skill-cards-icons/pingicon.png";
 import FEdevicon from "./skill-cards-icons/FEdevicon.png";
