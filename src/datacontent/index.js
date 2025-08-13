@@ -1,30 +1,30 @@
 import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  git,
-  figma,
-  RPAicon,
-  pingicon,
-  WebAppicon,
-  FEdevicon,
-  bikeclublogo,
   bauermedialogo,
+  bikeclublogo,
   bikeclubscreenshot,
+  chakraUI,
   chatbotcreenshot,
   contactformscreenshot,
-  sharepoint,
-  nextjs,
-  powerautomate,
-  graphql,
-  chakraUI,
-  jest,
+  css,
+  FEdevicon,
+  figma,
   formebikescreenshot,
-  vpostits_screenshot,
+  git,
+  graphql,
+  html,
+  javascript,
+  jest,
+  nextjs,
+  pingicon,
+  powerautomate,
+  reactjs,
+  RPAicon,
+  sharepoint,
   sharepointwheel,
+  tailwind,
+  typescript,
+  vpostits_screenshot,
+  WebAppicon,
 } from "../assets";
 
 export const navLinks = [
@@ -282,7 +282,7 @@ const projects = [
   {
     name: "Virtual Post-its",
     description:
-      "2024: Personal project, desktop only web app that mimics real sticky notes with drag-and-drop functionality, helping users organize tasks and ideas effortlessly. Features include note creation, editing, archiving, bulk actions, keyboard shortcuts, and persistent local storage. Not suitable for mobiles.",
+      "2024: Personal project, desktop only web app that mimics real sticky notes with drag-and-drop functionality, along with display of weather forecast. Features include note creation, editing, archiving, bulk actions, keyboard shortcuts, persistent local storage, Weather forecast widget by desired city. Not suitable for mobiles.",
     tags: [
       {
         name: "reactjs",
@@ -299,6 +299,10 @@ const projects = [
       {
         name: "JavaScript",
         color: "orange-text-gradient",
+      },
+      {
+        name: "OpenWeatherMap",
+        color: "purple-text-gradient",
       },
     ],
     image: vpostits_screenshot,
@@ -342,4 +346,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { experiences, projects, services, technologies };
