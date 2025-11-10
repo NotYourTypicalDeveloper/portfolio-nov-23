@@ -135,7 +135,7 @@ const experiences = [
     company_name: "Bike Club",
     icon: bikeclublogo,
     iconBg: "#383E56",
-    date: "April 2022 - Oct 24",
+    date: "From April 2022",
     points: [
       "Greenfield project",
       "Rebuild of our e-commerce site from the ground-up on frontend side using modern framework and following Agile methodologies",
