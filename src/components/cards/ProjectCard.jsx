@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../utils/motion.js";
+// import { fadeIn } from "../../utils/motion.js";
 import Tilt from "react-parallax-tilt";
 import { github, iconlink } from "../../assets/index.js";
 import { styles } from "../../styles.js";
 
+// have commented out motion because is broken, not displaying the cards
+
 const ProjectCard = ({
-  index,
+  // index,
   name,
   description,
   tags,
@@ -15,7 +17,8 @@ const ProjectCard = ({
   live_site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Tilt
         options={{
           max: 45,
@@ -75,7 +78,8 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
+    // </motion.div>
   );
 };
 

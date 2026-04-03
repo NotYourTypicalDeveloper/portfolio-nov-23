@@ -1,9 +1,11 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { styles } from "../../styles.js";
-import { fadeIn, textVariant } from "../../utils/motion.js";
+import { fadeIn } from "../../utils/motion.js";
 
 const ServiceCard = ({ index, title, icon }) => {
+  if (index === undefined) {
+    index = 1;
+  }
   return (
     <Tilt className="xs:w-48 w-60">
       <motion.div

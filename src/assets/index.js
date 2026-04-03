@@ -17,13 +17,12 @@ import nodejs from "./tech-icons/nodejs.png";
 import reactjs from "./tech-icons/reactjs.png";
 import tailwind from "./tech-icons/tailwind.png";
 import typescript from "./tech-icons/typescript.png";
-import sharepoint from "./tech-icons/sharepoint.svg";
+import sharepoint from "./tech-icons/sharepoint.png";
 import nextjs from "./tech-icons/nextjs.svg";
-import powerautomate from "./tech-icons/MSpowerautomate.webp";
-import graphql from "./tech-icons/graphql.svg";
+import powerautomate from "./tech-icons/powerautomate.png";
+import graphql from "./tech-icons/graphql.png";
 import chakraUI from "./tech-icons/chakraUI.png";
 import jest from "./tech-icons/jest.png";
-
 import bikeclublogo from "./company/bikeclublogo.webp";
 import bauermedialogo from "./company/bauermedialogo.png";
 
