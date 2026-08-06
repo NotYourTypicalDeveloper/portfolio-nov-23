@@ -27,7 +27,7 @@ const Tech = () => {
           ))}
         </div>
         <p className="mt-3 font-bold">
-          uh Oh!! Your device is an Android phone 😝. 3D is not well supported.
+          uh Oh!! Your device is an Android phone. 3D is not well supported.
           Please watch my portfolio on desktop or iOs devices to get the optimum
           experience.
         </p>

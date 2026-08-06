@@ -25,6 +25,7 @@ import chakraUI from "./tech-icons/chakraUI.png";
 import jest from "./tech-icons/jest.png";
 import bikeclublogo from "./company/bikeclublogo.webp";
 import bauermedialogo from "./company/bauermedialogo.png";
+import heiwlogo from "./company/heiwlogo.webp";
 
 import bikeclubscreenshot from "./projectsscreenshots/bikeclub_screenshot.png";
 import chatbotcreenshot from "./projectsscreenshots/chatbot_screenshot.png";
@@ -56,6 +57,7 @@ export {
   WebAppicon,
   bikeclublogo,
   bauermedialogo,
+  heiwlogo,
   bikeclubscreenshot,
   chatbotcreenshot,
   contactformscreenshot,

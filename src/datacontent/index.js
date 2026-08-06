@@ -2,6 +2,7 @@ import {
   bauermedialogo,
   bikeclublogo,
   bikeclubscreenshot,
+  heiwlogo,
   chakraUI,
   chatbotcreenshot,
   contactformscreenshot,
@@ -131,11 +132,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Web Developer (contractor)",
+    company_name: "HEIW - NHS Wales",
+    icon: heiwlogo,
+    iconBg: "#383E56",
+    date: "Oct 2025 - Aug 2026",
+    points: [
+      "Initial 4 months contract - successfully extended",
+      "Sole Front-end developer for NHS Wales on a learning platform and website, within the Digital department",
+      "Rebuilt a legacy site from scratch (HTML, CSS, JS), delivering fully responsive pages, aligned with UI prototypes, connected to in-house CMS",
+      "Collaboration and follow up with several stakeholders to clarify requirements and shape solutions",
+      "Maintain and improve existing sites, providing technical guidance and driving UX/UI improvements",
+    ],
+  },
+  {
     title: "Front End Developer",
     company_name: "Bike Club",
     icon: bikeclublogo,
     iconBg: "#383E56",
-    date: "From April 2022",
+    date: "April 2022 - Oct 2024",
     points: [
       "Greenfield project",
       "Rebuild of our e-commerce site from the ground-up on frontend side using modern framework and following Agile methodologies",
